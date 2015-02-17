@@ -1,0 +1,57 @@
+Connect imp to wifi using electricimp iphone app
+Add device to model via electricimp.com (device info should be displayed in iphone app)
+reupload code from github.com/liseman/growerbot
+Change agent code to send to another xively account if desired (feedID and api key)
+Paste in agent code from github
+
+login luke@lukeiseman.com 
+password growbountys1p
+
+On connecting via ftdi cable, make sure you have the baud set to 115200.
+choose 'pro or pro mini (3.3v, 8mhz) w/ atmega328 for the board.
+
+Files:
+dhtmaster.zip
+growbount22sleepier.ino
+growbount1815.ino
+
+Mux:
+moisturePin (low water level sensor): a3
+highPin (high water level sensor): a7
+light sensor: a0
+serial link: d2, d3 (to electric imp)
+dht22 (temperature and humidity): d10
+rgb led (set pin high for that color):
+red: d4
+green: d5
+blue: d6
+
+moistureCtrl is pin 9
+moisturePin is A2
+lowCtrl is D8
+lowPin is A3
+
+feeds (unit marked on imp): 
+1: https://xively.com/develop/hvBKKda5yRq-BPE42e5O 
+2: https://xively.com/develop/COdrFvrk5BW9S8lb3oyu
+3: https://xively.com/develop/Ld8yqhNkOKonYrZ6IM6g
+4: https://xively.com/develop/qChWv0gu1rtV1IuBJtmF
+5: https://xively.com/develop/Eh-VTXGDqbPRGP_KJLQs
+6: https://xively.com/develop/uYgOdUhm0MCv1F3e3tzo
+7: https://xively.com/develop/7ONlM8v3KdpzqW9jrcS2
+8: https://xively.com/develop/pjJihDvpr5AwcLisBM22
+
+my bad: i gave you the wrong urls. here are the correct, no-login-needed ones:
+1: https://xively.com/feeds/645442160
+2: https://xively.com/feeds/892872868
+3: https://xively.com/feeds/2060141050
+4: https://xively.com/feeds/142202836
+5: https://xively.com/feeds/1486585895
+6: https://xively.com/feeds/697994328
+7: https://xively.com/feeds/930538981
+8: https://xively.com/feeds/196563128
+
+Example json: http://growerbot.com/dash/
+view-source:http://growerbot.com/dash/
+Xively API reference: https://xively.com/dev/docs/api/quick_reference/
+
